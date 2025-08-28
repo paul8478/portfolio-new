@@ -1,0 +1,318 @@
+* {
+  padding: 0 !important;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.back1 {
+  background: transparent;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 20px;
+}
+
+
+/* Default desktop */
+.box1 {
+  border: 2px solid white;
+  height: 410px;
+  width: 410px;
+  flex-shrink: 0;
+}
+
+.box2 {
+  /* border: 2px solid green; */
+  height: 410px;
+  width: 600px;
+  color: white;
+  flex-shrink: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .back1 {
+    flex-direction: column;
+    height: auto; /* allow height to grow */
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .box1,
+  .box2 {
+    width: 90vw; /* almost full screen width */
+    height: auto; /* height adjusts to content */
+  }
+
+  .box1 {
+    border: 2px solid white;
+  }
+
+  .box2 {
+    border: 2px solid green;
+  }
+}
+
+
+/************** Cards **************/
+
+ .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 100px !important;
+              background: linear-gradient(to top, #0b0c1a, #0b0c1a);
+
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .subtitle {
+            color: #00ff88;
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .title {
+            font-size: 38px;
+            font-weight: 300;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            font-family: 'Fira Code', 'Courier New', monospace;
+            font-weight: bold;
+            color: white;
+            width: 70%;
+            margin: auto;
+        }
+
+        .title .highlight {
+            color: #666;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 40px 30px!important;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: #00ff88;
+            box-shadow: 0 20px 40px rgba(0, 255, 136, 0.1);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.02) 0%, rgba(0, 255, 136, 0) 50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 25px;
+            opacity: 0.8;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            font-family: 'Fira Code', 'Courier New', monospace;
+            color: white;
+        }
+
+        .service-description {
+            color: #999;
+            line-height: 1.6;
+            font-size: 16px;
+            position: relative;
+            z-index: 1;
+font-family: 'Fira Code', 'Courier New', monospace;  
+font-weight: bold;      }
+
+        .footer {
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .footer .highlight {
+            color: #00ff88;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .footer .highlight:hover {
+            color: #00cc6a;
+        }
+
+        /* Icons using CSS */
+        .icon-code::before {
+            content: "</>";
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ff88;
+        }
+
+        .icon-database::before {
+            content: "🗄";
+            font-size: 24px;
+        }
+
+        .icon-api::before {
+            content: "⚙";
+            font-size: 24px;
+        }
+
+        .icon-performance::before {
+            content: "⚡";
+            font-size: 24px;
+        }
+
+        .icon-cart::before {
+            content: "🛒";
+            font-size: 24px;
+        }
+
+        .icon-ai::before {
+            content: "✨";
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 40px 20px;
+            }
+
+            .title {
+                font-size: 36px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .service-card {
+                padding: 30px 25px;
+            }
+        }
+
+        @media (max-width: 768px) {
+    .container {
+        padding: 40px 15px !important;
+    }
+
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .title {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        gap: 15px; /* smaller gap for mobile */
+    }
+
+    .service-card {
+        padding: 20px 15px !important;
+    }
+
+    .service-title {
+        font-size: 20px;
+    }
+
+    .service-description {
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+    .title {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* still 2 per row */
+    }
+
+    .service-card {
+        padding: 15px 10px !important;
+    }
+
+    .service-title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .service-description {
+        font-size: 9px;
+        text-align: justify;
+    }
+}
+
+
+
+
+/* Video stays fixed in background */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* cover full screen */
+  z-index: -1;         /* push behind content */
+}
+
+/* Foreground content */
+.content {
+  position: relative;
+  z-index: 1;         /* make sure it's above video */
+  padding: 20px;
+  color: white;       /* text readable over video */
+}

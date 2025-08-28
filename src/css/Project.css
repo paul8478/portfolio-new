@@ -1,0 +1,118 @@
+.project {
+  padding: 50px;
+  background: transparent;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-top: 15vh;
+}
+
+.my-project-head {
+  font-size: 2.5rem;
+  margin-bottom: 35px;
+  color: #ff8c00;
+  text-shadow: 0px 0px 12px rgba(255, 140, 0, 0.6);}
+
+.pj-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* smaller cards */
+  gap: 25px;
+  width: 90%;
+   margin: auto ;
+}
+.pj-service-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px; /* slightly smaller radius */
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.099);
+}
+
+.pj-service-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.45);
+}
+
+.pj-card-image {
+  position: relative;
+}
+
+.pj-card-image img {
+  width: 100%;
+  height: 160px;   /* smaller image */
+  object-fit: cover;
+}
+
+.pj-service-type {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  background: #ff8c00;
+  padding: 5px 10px;
+  border-radius: 18px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.pj-card-content {
+  padding: 15px;  /* compact padding */
+}
+
+.pj-service-title {
+  font-size: 1.2rem;   /* smaller title */
+  margin-bottom: 8px;
+  color: #ffcc70;
+}
+
+.pj-service-description {
+  font-size: 0.85rem;   /* compact text */
+  color: #ddd;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  padding: 10px !important;
+}
+
+.pj-download-btn {
+  background: linear-gradient(135deg, #ff8c00, #ff3c00);
+  border: none;
+  padding: 8px 15px;   /* smaller button */
+  border-radius: 25px;
+  font-size: 0.85rem;
+  height: 30px;
+  width: 100px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.pj-download-btn:hover {
+  background: linear-gradient(135deg, #ff3c00, #ff8c00);
+  transform: scale(1.05);
+}
+
+
+/* Video stays fixed in background */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* cover full screen */
+  z-index: -1;         /* push behind content */
+}
+
+/* Foreground content */
+.content {
+  position: relative;
+  z-index: 1;         /* make sure it's above video */
+  padding: 20px;
+  color: white;       /* text readable over video */
+}
