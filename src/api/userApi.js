@@ -1,5 +1,5 @@
 import axios from "axios";                         
-const BASE_URL = "http://localhost:8081";          
+const BASE_URL = "portfolio-backend-production-0aa1.up.railway.app";          
 
 export const getUsers = async () => {                
   const response = await axios.get(`${BASE_URL}/portfolio`); 
