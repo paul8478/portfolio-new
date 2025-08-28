@@ -6,7 +6,20 @@ function SubjectsPage() {
   const [subjects, setSubjects] = useState([]);
 
   useEffect(() => {
-    getSubjects().then((data) => setSubjects(data));
+    getSubjects().then((data) => {
+      console.log("API Response:", data);
+
+      // Ensure we always store an array in `subjects`
+      if (Array.isArray(data)) {
+        setSubjects(data);
+      } else if (data && Array.isArray(data.subjects)) {
+        setSubjects(data.subjects);
+      } else if (data) {
+        setSubjects([data]); // if it’s a single object
+      } else {
+        setSubjects([]); // fallback
+      }
+    });
   }, []);
 
   return (
@@ -19,7 +32,7 @@ function SubjectsPage() {
 
       <div className="skills-content">
         <h1 className="skills-title">My Professional Skills</h1>
-        <p className="skills-subtitle"><br/></p>
+        <p className="skills-subtitle"><br /></p>
 
         <div className="skills-icons-wrapper">
           {subjects.length > 0 ? (
