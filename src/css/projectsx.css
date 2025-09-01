@@ -1,0 +1,154 @@
+/* Projectf.css (with unique names) */
+
+.uni-pj-project {
+  position: relative;
+  min-height: auto;
+  padding: 40px 10px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+    margin-bottom: 80px !important;
+
+}
+
+/* Background Video */
+.uni-pj-background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.uni-pj-project::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.uni-pj-head {
+  color: #f9fafb;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 15px #3b82f6;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Grid */
+.uni-pj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1390px;
+}
+
+/* Card */
+.uni-pj-card {
+  background: rgba(201, 34, 201, 0.082);
+  backdrop-filter: blur(12px);
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+border: 1px solid rgba(245, 46, 218, 0.5); /* looks thinner */
+}
+
+.uni-pj-card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+/* Image */
+.uni-pj-image {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.uni-pj-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.uni-pj-card:hover .uni-pj-image img {
+  transform: scale(1.1);
+}
+
+.uni-pj-type {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  letter-spacing: 1px;
+  box-shadow: 0px 0px 12px rgba(59, 130, 246, 0.6);
+}
+
+/* Content */
+.uni-pj-content {
+  padding: 20px;
+  text-align: center;
+  color: #e2e8f0;
+  padding: 10px !important;
+}
+
+.uni-pj-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.uni-pj-description {
+  font-size: 0.75rem;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.uni-pj-btn {
+  background: linear-gradient(135deg, #e03bf6, #d40685);
+  border: none;
+  padding: 5px !important;
+  border-radius: 5px !important;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 120px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.uni-pj-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

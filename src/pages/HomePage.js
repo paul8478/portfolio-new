@@ -2,6 +2,7 @@ import "../css/Home.css";
 import Education from "../components/Education";
 import Skill from "../components/SubjectsPage";
 import Hero from "../components/hero";
+import Projectx from "../components/Projects"
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
         <Hero />
         <Skill />
         <Education />
+<Projectx/>
       </div>
     </div>
   );
