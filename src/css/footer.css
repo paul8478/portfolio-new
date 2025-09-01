@@ -1,0 +1,137 @@
+.footer-body-main {
+  margin-top: 40px;
+}
+
+.footer-body {
+  background: rgba(255, 255, 255, 0.022); /* more transparent */
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(10px);
+  
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.25);
+
+  color: #f1f5f9;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 70px !important;
+
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.033),
+    rgba(255, 255, 255, 0.02)
+  );
+
+}
+
+
+
+/* Branding */
+.footer-left {
+  max-width: 250px;
+}
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+.footer-text {
+  margin: 10px 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.footer-copy {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+/* Links Section */
+.footer-links h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #f215fa;
+}
+.footer-links a {
+  display: block;
+  margin-bottom: 8px;
+  color: #f1f5f9;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+.footer-links a:hover {
+  color: #38bdf8;
+  padding-left: 5px;
+}
+
+/* Newsletter Section */
+.footer-newsletter h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #f215fa;
+}
+.footer-newsletter p {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+.newsletter-box {
+  display: flex;
+  gap: 8px;
+}
+.newsletter-box input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  flex: 1;
+  outline: none;
+}
+.newsletter-box button {
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+.newsletter-box button:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+/* Social Icons */
+.footer-socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+.footer-socials a {
+  color: #f1f5f9;
+  font-size: 1.4rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.footer-socials a:hover {
+  color: #f215fa;
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-body {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .newsletter-box {
+    flex-direction: column;
+  }
+  .newsletter-box input {
+    width: 100%;
+  }
+  .newsletter-box button {
+    width: 100%;
+  }
+  .footer-socials {
+    justify-content: center;
+  }
+}
