@@ -3,6 +3,7 @@ import Education from "../components/Education";
 import Skill from "../components/SubjectsPage";
 import Hero from "../components/hero";
 import Projectx from "../components/Projects"
+import Youtube from "../components/Youtubebanner"
 
 function HomePage() {
   return (
@@ -18,6 +19,7 @@ function HomePage() {
         <Hero />
         <Skill />
         <Education />
+        <Youtube />
 <Projectx/>
       </div>
     </div>

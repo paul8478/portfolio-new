@@ -1,0 +1,91 @@
+.Cont {
+    width: 70%;
+    height: 450px;
+    background-color: grey;
+    margin: auto;
+    display: flex;
+    margin-top: 150px;
+        margin-bottom: 150px;
+
+    
+}
+
+.text-cont{
+background-color: #030468;
+width: 60%;
+height: 100%;
+padding: 40px!important;
+text-align: center;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+.text2{
+    text-align: justify;
+}
+.text-yt{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 15px #0004ff;
+    animation: fadeInDown 1s ease-in-out;
+    color: rgb(170, 245, 250);
+}
+
+.subscribe-button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  height: 40px;
+  width: 180px;
+  padding: 25px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.logo-cont {
+  background: linear-gradient(145deg, #0047ab, #001f4d); /* dark blue gradient */
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+
+.logo {
+  background: linear-gradient(145deg, #d95cff, #c9a700); /* yellow gradient */
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4),
+              -5px -5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.yt-logo {
+  width: 80%;
+  height: 75%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.6),
+              inset 0px -3px 8px rgba(0,0,0,0.5),
+              inset 0px 3px 8px rgba(255,255,255,0.3);
+  transform: perspective(800px) rotateX(5deg) rotateY(-5deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yt-logo:hover {
+  transform: perspective(800px) rotateX(0deg) rotateY(0deg) scale(1.05);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.7),
+              inset 0px -4px 10px rgba(0,0,0,0.5),
+              inset 0px 4px 10px rgba(255,255,255,0.4);
+}
