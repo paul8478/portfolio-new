@@ -1,5 +1,5 @@
 .footer-body-main {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .footer-body {
@@ -20,6 +20,9 @@
     rgba(255, 255, 255, 0.033),
     rgba(255, 255, 255, 0.02)
   );
+  width: 98%;
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 
 }
 

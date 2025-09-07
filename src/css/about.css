@@ -1,0 +1,114 @@
+/* About.css */
+
+:root {
+  --light-bg: #f3f4f6;
+  --light-card: #ffffff;
+  --light-text: #4b5563;
+
+  --dark-bg: #1f2937;
+  --dark-card: #111827;
+  --dark-text: #d1d5db;
+  --primary: #3b82f6;
+}
+
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  background-color:rgba(2, 23, 63, 0.678);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 95%;
+  max-width: 80rem;
+  height: 70vh!important;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.ab-img{
+    width: 100%;
+    height: fit-content;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+}
+
+.social-icon{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 20px!important;
+    text-decoration: none !important;
+}
+
+@media (min-width: 768px) {
+  .about-card {
+    flex-direction: row;
+  }
+
+  .image-section,
+  .text-section {
+    width: 50%;
+  }
+}
+
+.image-section img {
+  width: fit-content;
+  height: fit-content;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-section img:hover {
+  transform: scale(1.05);
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  padding: 30px!important;
+  text-align: justify;
+}
+
+.text-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #eafaf0, #a906e4, #e44ff1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* for Firefox */
+  color: transparent; /* fallback for non-supporting browsers */
+}
+
+
+.text-section p {
+  color: white;
+  font-size: 1.125rem;
+  margin-top: 0.75rem;
+  line-height: 1.6;
+}
+
+/* Dark mode overrides */
+body.dark-mode .about-card {
+  background-color: var(--dark-card);
+}
+
+body.dark-mode .text-section p {
+  color: var(--dark-text);
+}

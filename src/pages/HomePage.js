@@ -4,6 +4,7 @@ import Skill from "../components/SubjectsPage";
 import Hero from "../components/hero";
 import Projectx from "../components/Projects"
 import Youtube from "../components/Youtubebanner"
+import About from "../components/About";
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
       {/* Foreground Content */}
       <div className="content">
         <Hero />
+        <About />
         <Skill />
         <Education />
         <Youtube />

@@ -1,17 +1,31 @@
+.youtube-banner{
+  height: 700px;
+  margin-top: 200px;
+}
+.head-yt{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 50px;
+    color: rgb(170, 245, 250);
+    text-shadow: 0px 0px 15px #0004ff;
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
 .Cont {
     width: 70%;
     height: 450px;
-    background-color: grey;
     margin: auto;
     display: flex;
-    margin-top: 150px;
+    margin-top: 80px;
         margin-bottom: 150px;
 
     
 }
 
 .text-cont{
-background-color: #030468;
+background-color:rgba(2, 23, 63, 0.678);
 width: 60%;
 height: 100%;
 padding: 40px!important;
@@ -19,6 +33,14 @@ text-align: center;
 justify-content: center;
 align-items: center;
 display: flex;
+}
+
+.text{
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: white;
+margin-bottom: 0px !important;
+    animation: fadeInUp 1s ease-in-out;
 }
 .text2{
     text-align: justify;
@@ -50,8 +72,7 @@ display: flex;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .logo-cont {
-  background: linear-gradient(145deg, #0047ab, #001f4d); /* dark blue gradient */
-  width: 40%;
+ background-color:rgba(2, 23, 63, 0.678);  width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;

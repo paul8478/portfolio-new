@@ -1,154 +1,168 @@
-/* Projectf.css (with unique names) */
-
 .uni-pj-project {
-  position: relative;
-  min-height: auto;
-  padding: 40px 10px !important;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
-    margin-bottom: 80px !important;
-
-}
-
-/* Background Video */
-.uni-pj-background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
-}
-
-.uni-pj-project::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.uni-pj-head {
-  color: #f9fafb;
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 40px;
+  background: radial-gradient(circle at top, #6a11cb, #000000);
+  color: #fff;
   text-align: center;
+  overflow-x: hidden; /* ✅ prevents horizontal scroll */
+}
+
+.containerx {
+  max-width: 1200px; /* ✅ better than 100%!important */
+  margin: auto;
+  padding-left: 60px ;
+  padding-right:60px;
+  padding-top: 60px!important;
+
+height: auto;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 500;
   letter-spacing: 2px;
-  text-shadow: 0px 0px 15px #3b82f6;
-  animation: fadeInDown 1s ease-in-out;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
-/* Grid */
-.uni-pj-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 30px;
-  width: 100%;
-  max-width: 1390px;
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 70px;
 }
 
-/* Card */
-.uni-pj-card {
-  background: rgba(201, 34, 201, 0.082);
-  backdrop-filter: blur(12px);
-  border-radius: 0px;
-  overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-border: 1px solid rgba(245, 46, 218, 0.5); /* looks thinner */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* ✅ responsive wrapping */
+  gap: 40px; /* ✅ smaller gap to avoid overflow */
+  margin-bottom: 40px;
 }
 
-.uni-pj-card:hover {
-  transform: translateY(-10px) scale(1.02);
-}
-
-/* Image */
-.uni-pj-image {
-  position: relative;
-  width: 100%;
-  height: 180px;
-  overflow: hidden;
-}
-
-.uni-pj-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.uni-pj-card:hover .uni-pj-image img {
-  transform: scale(1.1);
-}
-
-.uni-pj-type {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
-  color: white;
-  font-size: 0.85rem;
-  font-weight: 600;
-  padding: 6px 14px;
-  letter-spacing: 1px;
-  box-shadow: 0px 0px 12px rgba(59, 130, 246, 0.6);
-}
-
-/* Content */
-.uni-pj-content {
-  padding: 20px;
+.card {
   text-align: center;
-  color: #e2e8f0;
-  padding: 10px !important;
+  flex: 1 1 250px; /* ✅ responsive flex sizing */
+  max-width: 300px; /* ✅ keeps it neat */
 }
 
-.uni-pj-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+.card h3 {
+  font-size: 4rem;
+  margin-bottom: 8px;
 }
 
-.uni-pj-description {
-  font-size: 0.75rem;
-  opacity: 0.85;
+.card p {
+  font-size: 16px!important;
+  color: #cfcfcf;
   margin-bottom: 20px;
 }
 
-/* Button */
-.uni-pj-btn {
-  background: linear-gradient(135deg, #e03bf6, #d40685);
+.btnx {
+  display: inline-block;
+  padding: 12px 30px;
+  background: transparent;
+  border: 1px solid #38bdf8 !important;
+  color: #0f172a;
   border: none;
-  padding: 5px !important;
-  border-radius: 5px !important;
-  font-size: 1rem;
-  font-weight: 600;
-  width: 120px;
-  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease, background 0.3s ease;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
-.uni-pj-btn:hover {
-  transform: translateY(-2px);
+.btnx:hover {
+  transform: scale(1.05);
 }
 
-/* Animation */
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  color: #bdbdbd;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.emoji {
+  margin-top: 20px;
+}
+.emo{
+  width: 200px;
+  height: 200px; 
+}
+
+.footer-bottom {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #888;
+}
+
+.footer-logo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: #222;
+  border: 1px solid #444;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
+
+  .card {
+    max-width: 90%;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+
+/* Video stays fixed in background */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* cover full screen */
+  z-index: -1;         /* push behind content */
+}
+
+/* Foreground content */
+.content {
+  position: relative;
+  z-index: 1;         /* make sure it's above video */
+  padding: 20px;
+  color: white;       /* text readable over video */
 }

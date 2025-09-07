@@ -4,7 +4,8 @@ import logo from "../images/yt2.jpg";
 
 const Youtubebanner = () => {
   return (
-    <divc>
+    <div className='youtube-banner'>
+      <h1 className='head-yt'>YouTube Channel</h1>
       <div className='Cont'>
         <div className='text-cont'>
            <div>
@@ -24,7 +25,7 @@ Discover exciting projects, learn coding, and dive deep into machine learning! O
           </div>
         </div>
       </div>
-    </divc>
+    </div>
   );
 };
 

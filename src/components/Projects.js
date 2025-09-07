@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/projectsx.css";
+import avatar2 from "../images/avatar2.png";
 
 function Projects() {
   const dummyProjects = [
@@ -31,27 +32,31 @@ function Projects() {
 
   return (
     <div className="uni-pj-project">
-      <video autoPlay loop muted playsInline className="uni-pj-background-video">
-        <source src="/videos/star2.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <h1 className="uni-pj-head">🚀 My Projects</h1>
+      
+<div className="containerx">
+    <h2>CONTACT ME</h2>
+    <h1>Ready to develop your next big thing?</h1>
 
-      <div className="uni-pj-grid">
-        {dummyProjects.map((project, index) => (
-          <div className="uni-pj-card" key={index}>
-            <div className="uni-pj-image">
-              <img src={project.image} alt={project.title} />
-              <span className="uni-pj-type">{project.type}</span>
-            </div>
-            <div className="uni-pj-content">
-              <h3 className="uni-pj-title">{project.title}</h3>
-              <p className="uni-pj-description">{project.description}</p>
-              <button className="uni-pj-btn">⬇ Download</button>
-            </div>
-          </div>
-        ))}
+    <div className="cards">
+      <div className="card">
+        <h3>Discord</h3>
+        <p>enzostvs</p>
+        <a href="#" className="btnx">Hit me up on Discord</a>
       </div>
+      <div className="card">
+        <h3>LinkedIn</h3>
+        <p>in/enzostvs</p>
+        <a href="#" className="btnx">Visit my LinkedIn</a>
+      </div>
+    </div>
+
+    <div className="emoji">
+      <img src={avatar2} alt="Rocket Emoji" className="emo" />
+    </div>
+  </div>
+
+  
+      
     </div>
   );
 }
