@@ -45,6 +45,9 @@ const Navbar = () => {
         <Link to="/projects" style={linkStyle("/projects")}>
           Projects
         </Link>
+        <Link to="/youtube" style={linkStyle("/youtube")}>
+          YouTube
+        </Link>
         <Link to="/subjects" style={linkStyle("/subjects")}>
           Contact Me
         </Link>

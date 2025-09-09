@@ -15,7 +15,9 @@ const Youtubebanner = () => {
 
             <p className='text2'>Welcome to DevArk! 🚀
 Discover exciting projects, learn coding, and dive deep into machine learning! On this channel, I share tutorials, tips, and guides to help you build amazing projects and master the world of development and ML. Whether you're a beginner or an experienced coder, there's something here for you. Subscribe and join our community to stay updated!</p>
-            <button className='subscribe-button'>Subscribe</button>
+            <a href="https://www.youtube.com/@DevArk-m4j" target="_blank" rel="noopener noreferrer">
+              <button className='subscribe-button'>Subscribe</button>
+            </a>  
             </div>
            </div>
         </div>

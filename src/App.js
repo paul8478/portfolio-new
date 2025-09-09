@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import Footer from "./components/Footer"; // ✅ fixed spelling
+import YouTubeVideos from "./pages/YouTubeVideos"; // ✅ fixed spelling
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/youtube" element={<YouTubeVideos />} />
+
           </Routes>
         </main>
 

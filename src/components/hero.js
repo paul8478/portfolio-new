@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getUsers } from "../api/userApi";
 import { getSubjects } from "../api/subjectApi";
 import "../css/Home.css";
+import paul from "../images/paul.jpg";
 
 function Hero() {
   // creating state variable and setter function
@@ -17,7 +18,7 @@ function Hero() {
     <div>
       <div className="back1">
         <div className="box1">
-          hello
+          <img src={paul} alt="Description" className="hero-image" />
         </div>
         <div className="box2">
           <p>

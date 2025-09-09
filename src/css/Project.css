@@ -78,13 +78,13 @@
 }
 
 .pj-download-btn {
-  background: linear-gradient(135deg, #ff8c00, #ff3c00);
+  background: linear-gradient(135deg, #ff00f2, #ff0062);
   border: none;
   padding: 8px 15px;   /* smaller button */
-  border-radius: 25px;
+  border-radius: 5px;
   font-size: 0.85rem;
   height: 30px;
-  width: 100px;
+  width: 90%;
   margin-bottom: 10px;
   color: #fff;
   font-weight: bold;
@@ -93,7 +93,7 @@
 }
 
 .pj-download-btn:hover {
-  background: linear-gradient(135deg, #ff3c00, #ff8c00);
+  background: linear-gradient(135deg, #ff0062, #ff00f2);
   transform: scale(1.05);
 }
 

@@ -47,7 +47,7 @@ function ProjectsPage() {
             <div className="pj-card-content">
               <h3 className="pj-service-title">{project.title}</h3>
               <p className="pj-service-description">{project.description}</p>
-              <button className="pj-download-btn">⬇ Download</button>
+              <button className="pj-download-btn">View Poject</button>
             </div>
           </div>
         ))}
